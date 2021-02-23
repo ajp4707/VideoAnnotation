@@ -31,6 +31,13 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
+        <widget class="QPushButton" name="fileBtn">
+         <property name="text">
+          <string>Open File</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -68,9 +75,9 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="fileLbl">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Filename Here</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -78,7 +85,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QGraphicsView" name="graphicsView">
+           <widget class="QGraphicsView" name="QVideo">
             <property name="minimumSize">
              <size>
               <width>360</width>
@@ -88,7 +95,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="ScrollBar">
+           <widget class="QFrame" name="ScrollFrm">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -104,11 +111,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame">
+           <widget class="QFrame" name="buttonFrm">
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>40</height>
+              <height>50</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -125,7 +132,7 @@
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
-              <spacer name="horizontalSpacer_2">
+              <spacer name="leftSpc">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
@@ -142,7 +149,7 @@
                <property name="maximumSize">
                 <size>
                  <width>50</width>
-                 <height>20</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="text">
@@ -155,7 +162,7 @@
                <property name="maximumSize">
                 <size>
                  <width>50</width>
-                 <height>20</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="text">
@@ -168,7 +175,7 @@
                <property name="maximumSize">
                 <size>
                  <width>50</width>
-                 <height>20</height>
+                 <height>30</height>
                 </size>
                </property>
                <property name="text">
@@ -177,7 +184,7 @@
               </widget>
              </item>
              <item>
-              <spacer name="horizontalSpacer_3">
+              <spacer name="rightSpc">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
