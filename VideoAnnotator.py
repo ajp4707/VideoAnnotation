@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from imageMonitor import SourceMonitor
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -63,24 +63,6 @@ class Ui_MainWindow(object):
         self.buttonFrm.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.buttonFrm.setFrameShadow(QtWidgets.QFrame.Raised)
         self.buttonFrm.setObjectName("buttonFrm")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.buttonFrm)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem1 = QtWidgets.QSpacerItem(40, 40, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem1)
-        self.playBtn = QtWidgets.QPushButton(self.buttonFrm)
-        self.playBtn.setMaximumSize(QtCore.QSize(50, 30))
-        self.playBtn.setObjectName("playBtn")
-        self.horizontalLayout_2.addWidget(self.playBtn)
-        self.pauseBtn = QtWidgets.QPushButton(self.buttonFrm)
-        self.pauseBtn.setMaximumSize(QtCore.QSize(50, 30))
-        self.pauseBtn.setObjectName("pauseBtn")
-        self.horizontalLayout_2.addWidget(self.pauseBtn)
-        self.seekBtn = QtWidgets.QPushButton(self.buttonFrm)
-        self.seekBtn.setMaximumSize(QtCore.QSize(50, 30))
-        self.seekBtn.setObjectName("seekBtn")
-        self.horizontalLayout_2.addWidget(self.seekBtn)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 40, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem2)
         self.verticalLayout_4.addWidget(self.buttonFrm)
         self.verticalLayout_2.addWidget(self.monitorFrm)
         self.editorFrm = QtWidgets.QFrame(self.workFrm)
@@ -109,9 +91,6 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.fileBtn.setText(_translate("MainWindow", "Open File"))
         self.fileLbl.setText(_translate("MainWindow", "Filename Here"))
-        self.playBtn.setText(_translate("MainWindow", "Play"))
-        self.pauseBtn.setText(_translate("MainWindow", "Pause"))
-        self.seekBtn.setText(_translate("MainWindow", "Seek"))
 
 
 if __name__ == "__main__":
